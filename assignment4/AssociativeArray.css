@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+.main {
+    width: 40%;
+    margin: 10% auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(243, 243, 243);
+}
+
+table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    background-color: white;
+}
+
+thead tr {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+tbody tr {
+    display: flex;
+    flex-direction: column;
+}
+
+td,
+th {
+    padding: 5px;
+}
+
+.t_title {
+    background-color: teal;
+    color: white;
+}
