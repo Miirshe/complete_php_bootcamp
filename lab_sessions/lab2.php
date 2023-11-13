@@ -16,7 +16,6 @@ function oddNumber($number) {
 	echo "The Odd Number : ";
 	print_r($oddNumber);
 }
-
 oddNumber(15);
 
 function evenNumber($number){
@@ -35,21 +34,41 @@ evenNumber(15);
 
 
 function factorialNumbers($number){
-
 	$factorial = 1;
-
 	$i = 1;
-
 	while($i <= $number){
-
 		$factorial *= $i;
-
 		$i++;
-
 	}
-
 	echo $factorial;
 }
-
 factorialNumbers(5);
+
+function IsprimeNumber($number){
+	if($number <= 2){
+		return false;
+	}
+
+	for($i =2; $i <= sqrt($number); $i++){
+
+		if($number % $i == 0){
+			return true; 
+		}
+	}
+}
+function PrimeNumber($number){
+
+	$primeNumbers = [];
+
+	for($i = 2; $i <= $number; $i++){
+
+		if(IsprimeNumber($i)){
+			$primeNumbers[] = $i; 
+		}
+	}
+	return $primeNumbers;
+}
+$primeNumber = PrimeNumber(15);
+echo "\nThe Prime Number : ";
+print_r($primeNumber);
 ?>
