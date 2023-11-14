@@ -71,4 +71,7 @@ function PrimeNumber($number){
 $primeNumber = PrimeNumber(15);
 echo "\nThe Prime Number : ";
 print_r($primeNumber);
+
+
+
 ?>
