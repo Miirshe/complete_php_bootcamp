@@ -36,4 +36,21 @@ function farenheitToCelsius($farenheit){
 	echo("\nThe Celcius : $celcius °f");
 }
 farenheitToCelsius(32);
+
+
+function Divisible(){
+	$i = 2;
+
+	while($i <= 20){
+		if($i % 3 == 0 ){
+			echo "\n $i";
+		}
+		if($i == 15){
+			break;
+		}
+		$i++;
+	}
+
+}
+Divisible();
 ?>
